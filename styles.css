@@ -1,5 +1,5 @@
 /* Registration & Comments Form */
-.form-section {
+.event-form {
   max-width: 500px;
   margin: 0 auto;
   background: var(--card);
@@ -8,22 +8,16 @@
   box-shadow: 0 8px 22px rgba(2, 6, 23, 0.06);
 }
 
-.form-section h3 {
+.event-form h3 {
   margin-top: 0;
   margin-bottom: 15px;
   color: var(--accent);
   font-weight: 700;
 }
 
-form label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 6px;
-}
-
-form input,
-form textarea,
-form button {
+.event-form input,
+.event-form textarea,
+.event-form button {
   width: 100%;
   padding: 12px 15px;
   margin-bottom: 15px;
@@ -35,18 +29,18 @@ form button {
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-form input:focus,
-form textarea:focus {
+.event-form input:focus,
+.event-form textarea:focus {
   border-color: var(--primary);
   box-shadow: 0 0 0 3px rgba(11, 76, 106, 0.2);
 }
 
-form textarea {
+.event-form textarea {
   min-height: 120px;
   resize: vertical;
 }
 
-form button {
+.event-form button {
   background: var(--primary);
   color: white;
   font-weight: 700;
@@ -55,7 +49,7 @@ form button {
   transition: background 0.3s ease;
 }
 
-form button:hover {
+.event-form button:hover {
   background: var(--accent);
 }
 
