@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aliyu Abdullahi — Web Developer Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <h1>Aliyu Abdullahi</h1>
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Front-End Web Developer</h2>
+  <p>Building fast, responsive websites using HTML, CSS, and JavaScript. Based in Nigeria.</p>
+</section>
+
+<main>
+  <section id="projects">
+    <h3>Selected Projects</h3>
+    <div class="projects-grid">
+
+      <!-- Project 1: Tungan-Maje Community -->
+      <div class="project-card">
+        <img src="latest/ton.jpg"alt="ton" />
+        <div class="project-content">
+          <h4>Tungan-Maje Community Event</h4>
+          <p>Event website with working registration form integrated via Formspree.</p>
+          <div class="project-links">
+            <a href="#contact">Try Registration</a>
+            <a href="https://github.com/yourgithubusername/tunganmaje-demo" target="_blank" rel="noopener">Source Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Abuja Tech Landing Page -->
+      <div class="project-card">
+        <img src="https://i.imgur.com/CxITzQG.png" alt="Abuja Tech Landing Page" />
+        <div class="project-content">
+          <h4>Abuja Tech Startup Landing</h4>
+          <p>Clean, modern landing page for a tech startup, showcasing Flexbox & CSS Grid.</p>
+          <div class="project-links">
+            <a href="https://your-live-site-link.com" target="_blank" rel="noopener">Live Demo</a>
+            <a href="https://github.com/yourgithubusername/abuja-tech-demo" target="_blank" rel="noopener">Source Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Responsive Blog Home -->
+      <div class="project-card">
+        <img src="https://i.imgur.com/hH7Prp3.png" alt="Responsive Blog Home" />
+        <div class="project-content">
+          <h4>Responsive Blog Home</h4>
+          <p>Blog homepage with responsive cards, CSS Grid, and simple JS filtering.</p>
+          <div class="project-links">
+            <a href="https://your-live-blog-demo.com" target="_blank" rel="noopener">Live Demo</a>
+            <a href="https://github.com/yourgithubusername/blog-home-demo" target="_blank" rel="noopener">Source Code</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="skills">
+    <h3>Skills</h3>
+    <p>HTML, CSS (Flexbox/Grid), responsive design, basic JavaScript, and form integration.</p>
+  </section>
+
+  <aside>
+    <section class="contact-card" id="contact">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:assalafytunganmaje@gmail.com">assalafytunganmaje@gmail.com</a></p>
+      <h3>Register for Tungan-Maje Event</h3>
+      <form action="https://formspree.io/f/yourformid" method="POST" id="registrationForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required />
+        
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="_replyto" placeholder="you@example.com" required />
+        
+        <button type="submit">Submit Registration</button>
+        <p class="success-message" id="successMessage" style="display:none;">Thank you for registering!</p>
+      </form>
+    </section>
+
+    <section class="about-card">
+      <h3>About Me</h3>
+      <p>Hi! I’m Aliyu Abdullahi, a front-end developer and Computer Science student based in Nigeria. I specialize in building fast, responsive websites using HTML and CSS. I’m passionate about clean code, good design, and helping clients bring their ideas to life. I also speak Arabic, English, and some local Nigerian languages, so communication is never a problem!</p>
+    </section>
+  </aside>
+</main>
+
+<footer>
+  &copy; 2025 Aliyu Abdullahi
+</footer>
+
+<script>
+  const form = document.getElementById('registrationForm');
+  const successMsg = document.getElementById('successMessage');
+
+  form.addEventListener('submit', (e) => {
+    setTimeout(() => {
+      successMsg.style.display = 'block';
+      form.reset();
+    }, 500);
+  });
+</script>
+
+</body>
+</html>
