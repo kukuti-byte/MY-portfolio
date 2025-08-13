@@ -23,14 +23,13 @@
 </section>
 
 <main>
-  <!-- Projects Section -->
   <section id="projects">
     <h3>Selected Projects</h3>
     <div class="projects-grid">
 
-      <!-- Project 1 -->
+      <!-- Project 1: Tungan-Maje Community -->
       <div class="project-card">
-        <img src="project-images/tunga2.jpg" alt="Tungan Maje Event" width="400" />
+        <img src="project-images/tunga2.jpg" alt="Tungan Maje" width="400" />
         <div class="project-content">
           <h4>Tungan-Maje Community Event</h4>
           <p>Event website with working registration form integrated via Formspree.</p>
@@ -41,27 +40,27 @@
         </div>
       </div>
 
-      <!-- Project 2 -->
+      <!-- Project 2: Abuja Tech Landing Page -->
       <div class="project-card">
         <img src="project-images/tungatech.jpg" alt="Abuja Tech Landing Page" width="400" />
         <div class="project-content">
           <h4>Abuja Tech Startup Landing</h4>
-          <p>Modern landing page for a tech startup, showcasing Flexbox & CSS Grid.</p>
+          <p>Clean, modern landing page for a tech startup, showcasing Flexbox & CSS Grid.</p>
           <div class="project-links">
-            <a href="#" target="_blank" rel="noopener">Live Demo</a>
+            <a href="https://your-live-site-link.com" target="_blank" rel="noopener">Live Demo</a>
             <a href="https://github.com/yourgithubusername/abuja-tech-demo" target="_blank" rel="noopener">Source Code</a>
           </div>
         </div>
       </div>
 
-      <!-- Project 3 -->
+      <!-- Project 3: Responsive Blog Home -->
       <div class="project-card">
         <img src="project-images/blog.jpg" alt="Responsive Blog Home" width="400" />
         <div class="project-content">
           <h4>Responsive Blog Home</h4>
           <p>Blog homepage with responsive cards, CSS Grid, and simple JS filtering.</p>
           <div class="project-links">
-            <a href="#" target="_blank" rel="noopener">Live Demo</a>
+            <a href="https://your-live-blog-demo.com" target="_blank" rel="noopener">Live Demo</a>
             <a href="https://github.com/yourgithubusername/blog-home-demo" target="_blank" rel="noopener">Source Code</a>
           </div>
         </div>
@@ -70,32 +69,30 @@
     </div>
   </section>
 
-  <!-- Skills Section -->
   <section id="skills">
     <h3>Skills</h3>
     <p>HTML, CSS (Flexbox/Grid), responsive design, basic JavaScript, and form integration.</p>
   </section>
 
   <aside>
-    <!-- Contact & Registration -->
     <section class="contact-card" id="contact">
       <h3>Contact</h3>
       <p>Email: <a href="mailto:assalafytunganmaje@gmail.com">assalafytunganmaje@gmail.com</a></p>
 
       <h3>Register for Tungan-Maje Event</h3>
-      <form id="registrationForm" action="https://formspree.io/f/xpwlnaya" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="_replyto" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message"></textarea>
-        <button type="submit">Send</button>
+      <form id="registrationForm" action="https://formspree.io/f/xpwlnaya" method="POST" class="event-form">
+        <input type="text" name="full_name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <textarea name="comments" placeholder="Additional Comments (optional)"></textarea>
+        <button type="submit">Register</button>
       </form>
 
       <p id="successMessage" style="display:none; color:green; margin-top:10px;">
-        ✅ Your message has been sent successfully!
+        ✅ Registration submitted successfully! We will contact you soon.
       </p>
     </section>
 
-    <!-- About Me -->
     <section class="about-card">
       <h3>About Me</h3>
       <p>Hi! I’m Aliyu Abdullahi, a front-end developer and Computer Science student based in Nigeria. I specialize in building fast, responsive websites using HTML and CSS. I’m passionate about clean code, good design, and helping clients bring their ideas to life. I also speak Arabic, English, and some local Nigerian languages, so communication is never a problem!</p>
@@ -107,13 +104,11 @@
   &copy; 2025 Aliyu Abdullahi
 </footer>
 
-<!-- Form Success Script -->
 <script>
   const form = document.getElementById('registrationForm');
   const successMsg = document.getElementById('successMessage');
 
   form.addEventListener('submit', (e) => {
-    // Let Formspree handle sending; just show message after delay
     setTimeout(() => {
       successMsg.style.display = 'block';
       form.reset();
