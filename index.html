@@ -29,7 +29,7 @@
 
       <!-- Project 1: Tungan-Maje Community -->
       <div class="project-card">
-        <img src="project-images/tunga2.jpg"alt="Tungan Maje"width="400" />
+        <img src="project-images/tunga2.jpg" alt="Tungan Maje" width="400" />
         <div class="project-content">
           <h4>Tungan-Maje Community Event</h4>
           <p>Event website with working registration form integrated via Formspree.</p>
@@ -42,7 +42,7 @@
 
       <!-- Project 2: Abuja Tech Landing Page -->
       <div class="project-card">
-        <img src="project-images/tungatech.jpg" alt="Abuja Tech Landing Page"width="400" />
+        <img src="project-images/tungatech.jpg" alt="Abuja Tech Landing Page" width="400" />
         <div class="project-content">
           <h4>Abuja Tech Startup Landing</h4>
           <p>Clean, modern landing page for a tech startup, showcasing Flexbox & CSS Grid.</p>
@@ -55,7 +55,7 @@
 
       <!-- Project 3: Responsive Blog Home -->
       <div class="project-card">
-        <img src="project-images/blog.jpg" alt="Responsive Blog Home"width="400" />
+        <img src="project-images/blog.jpg" alt="Responsive Blog Home" width="400" />
         <div class="project-content">
           <h4>Responsive Blog Home</h4>
           <p>Blog homepage with responsive cards, CSS Grid, and simple JS filtering.</p>
@@ -79,16 +79,17 @@
       <h3>Contact</h3>
       <p>Email: <a href="mailto:assalafytunganmaje@gmail.com">assalafytunganmaje@gmail.com</a></p>
       <h3>Register for Tungan-Maje Event</h3>
-      <form action="https://formspree.io/f/yourformid" method="POST" id="registrationForm">
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" placeholder="Your full name" required />
-        
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="_replyto" placeholder="you@example.com" required />
-        
-        <button type="submit">Submit Registration</button>
-        <p class="success-message" id="successMessage" style="display:none;">Thank you for registering!</p>
+
+      <form id="registrationForm" action="https://formspree.io/f/xpwlnaya" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="_replyto" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
       </form>
+
+      <p id="successMessage" style="display:none; color:green; margin-top:10px;">
+        ✅ Your message has been sent successfully!
+      </p>
     </section>
 
     <section class="about-card">
