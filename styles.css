@@ -202,3 +202,31 @@
     margin-bottom: 15px;
     font-size: 1rem;
   }
+  .project-card img {
+  width: 100%;
+  height: auto; /* keeps aspect ratio */
+  display: block;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+@media (max-width: 900px) {
+  main {
+    grid-template-columns: 1fr; /* single column layout */
+  }
+  aside {
+    margin-top: 20px;
+  }
+}
+h1, h2, h3, h4 {
+  line-height: 1.2;
+}
+p {
+  color: #555;
+  font-size: 1rem;
+}
+html {
+  scroll-behavior: smooth;
+}
