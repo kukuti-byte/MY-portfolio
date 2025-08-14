@@ -2,120 +2,154 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Aliyu Abdullahi — Web Developer Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <h1>Aliyu Abdullahi</h1>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h2>Front-End Web Developer</h2>
-    <p>Building fast, responsive websites using HTML, CSS, and JavaScript. Based in Nigeria.</p>
+<header>
+  <h1>Aliyu Abdullahi</h1>
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Front-End Web Developer</h2>
+  <p>Building fast, responsive websites and apps for Tungan-Maje community. Based in Nigeria.</p>
+</section>
+
+<main>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h3>Projects — Tungan-Maje Demos</h3>
+    <div class="projects-grid">
+
+      <!-- Demo 1 -->
+      <div class="project-card">
+        <img src="project-images/tunga2.jpg" alt="Tungan-Maje Community Event" />
+        <div class="project-content">
+          <h4>Tungan-Maje Community Event</h4>
+          <p>A registration system for community events, fully integrated with Formspree.</p>
+          <div class="project-links">
+            <a href="#contact">Register</a>
+            <a href="https://github.com/yourgithubusername/tunga-event" target="_blank">Source Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Demo 2 -->
+      <div class="project-card">
+        <img src="https://i.imgur.com/CxITzQG.png" alt="Tungan-Maje Local Market" />
+        <div class="project-content">
+          <h4>Tungan-Maje Local Market</h4>
+          <p>A landing page for the local market, showcasing products and vendor info.</p>
+          <div class="project-links">
+            <a href="https://github.com/yourgithubusername/tunga-market" target="_blank">Source Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Demo 3 -->
+      <div class="project-card">
+        <img src="https://i.imgur.com/hH7Prp3.png" alt="Tungan-Maje Education Portal" />
+        <div class="project-content">
+          <h4>Tungan-Maje Education Portal</h4>
+          <p>Demo portal for schools in Tungan-Maje, showing classes, schedules, and resources.</p>
+          <div class="project-links">
+            <a href="https://github.com/yourgithubusername/tunga-education" target="_blank">Source Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Demo 4 -->
+      <div class="project-card">
+        <img src="https://i.imgur.com/8Z7kT9G.jpg" alt="Tungan-Maje Volunteer Signup" />
+        <div class="project-content">
+          <h4>Tungan-Maje Volunteer Signup</h4>
+          <p>Sign-up system for community volunteers. Users can register to participate.</p>
+          <div class="project-links">
+            <a href="#contact">Sign Up</a>
+            <a href="https://github.com/yourgithubusername/tunga-volunteer" target="_blank">Source Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Demo 5 -->
+      <div class="project-card">
+        <img src="https://i.imgur.com/4vWmGpD.jpg" alt="Tungan-Maje Community Blog" />
+        <div class="project-content">
+          <h4>Tungan-Maje Community Blog</h4>
+          <p>Blog platform for Tungan-Maje updates, announcements, and news articles.</p>
+          <div class="project-links">
+            <a href="https://github.com/yourgithubusername/tunga-blog" target="_blank">Source Code</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </section>
 
-  <main>
-    <!-- Projects Section -->
-    <section id="projects">
-      <h3>Selected Projects</h3>
-      <div class="projects-grid">
+  <!-- Skills Section -->
+  <section id="skills">
+    <h3>Skills</h3>
+    <p>HTML, CSS (Flexbox/Grid), responsive design, JavaScript, form integration with Formspree, clean UX/UI design.</p>
+  </section>
 
-        <div class="project-card">
-          <img src="project-images/tunga.jpg" alt="Tungan-Maje Community Event" />
-          <div class="project-content">
-            <h4>Tungan-Maje Community Event</h4>
-            <p>Event website with working registration form integrated via Formspree.</p>
-            <div class="project-links">
-              <a href="#contact">Try Registration</a>
-              <a href="https://github.com/yourgithubusername/tunganmaje-demo" target="_blank">Source Code</a>
-            </div>
-          </div>
-        </div>
+  <!-- Contact & Registration Form -->
+  <aside>
+    <section class="form-section" id="contact">
+      <h3>Contact / Register for Events</h3>
+      <form action="https://formspree.io/f/xpwlnaya" method="POST">
+        <label for="full_name">Full Name</label>
+        <input type="text" id="full_name" name="name" placeholder="Your full name" required />
 
-        <div class="project-card">
-          <img src="project-images/tungatech.png" alt="Abuja Tech Landing Page" />
-          <div class="project-content">
-            <h4>Abuja Tech Startup Landing</h4>
-            <p>Clean, modern landing page for a tech startup, showcasing Flexbox & CSS Grid.</p>
-            <div class="project-links">
-              <a href="#">Live Demo</a>
-              <a href="https://github.com/yourgithubusername/abuja-tech-demo" target="_blank">Source Code</a>
-            </div>
-          </div>
-        </div>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="_replyto" placeholder="you@example.com" required />
 
-        <div class="project-card">
-          <img src="project-images/blog.png" alt="Responsive Blog Home" />
-          <div class="project-content">
-            <h4>Responsive Blog Home</h4>
-            <p>Blog homepage with responsive cards, CSS Grid, and simple JS filtering.</p>
-            <div class="project-links">
-              <a href="#">Live Demo</a>
-              <a href="https://github.com/yourgithubusername/blog-home-demo" target="_blank">Source Code</a>
-            </div>
-          </div>
-        </div>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your phone number" required />
 
-      </div>
-    </section>
+        <label for="comments">Additional Comments</label>
+        <textarea id="comments" name="message" placeholder="Optional comments"></textarea>
 
-    <!-- Skills Section -->
-    <section id="skills">
-      <h3>Skills</h3>
-      <ul class="skills-list">
-        <li>HTML5 & CSS3</li>
-        <li>Responsive Design (Flexbox & Grid)</li>
-        <li>JavaScript (Basic)</li>
-        <li>Form Integration (Formspree)</li>
-        <li>Git & GitHub</li>
-      </ul>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-      <h3>About Me</h3>
-      <p>Hi! I’m Aliyu Abdullahi, a Computer Science student at University of Abuja, Nigeria. I am fluent in Arabic, English, and some local Nigerian languages. I specialize in building fast, clean, and responsive websites. I enjoy helping clients bring their ideas to life.</p>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="form-section">
-      <h3>Contact Me</h3>
-      <p>Email: <a href="mailto:assalafytunganmaje@gmail.com">assalafytunganmaje@gmail.com</a></p>
-      <form id="contactForm" action="https://formspree.io/f/xpwlnaya" method="POST">
-        <input type="text" name="name" placeholder="Full Name" required>
-        <input type="email" name="_replyto" placeholder="Email Address" required>
-        <textarea name="message" placeholder="Your Message" rows="5"></textarea>
-        <button type="submit">Send Message</button>
-        <p class="success-message" id="successMessage" style="display:none;">✅ Your message has been sent successfully!</p>
+        <button type="submit">Submit</button>
       </form>
+      <p class="success-message" id="successMessage" style="display:none;">✅ Submission received! We will contact you soon.</p>
     </section>
-  </main>
 
-  <!-- Footer -->
-  <footer>
-    &copy; 2025 Aliyu Abdullahi | Email: <a href="mailto:assalafytunganmaje@gmail.com">assalafytunganmaje@gmail.com</a>
-  </footer>
+    <!-- About Me -->
+    <section class="about-card">
+      <h3>About Me</h3>
+      <p>Hi! I’m Aliyu Abdullahi, a passionate front-end web developer and Computer Science student at the University of Abuja, Nigeria. 
+    I specialize in building fast, responsive, and user-friendly websites for clients worldwide. 
+    I have experience creating landing pages, blogs, e-commerce sites, and community projects. 
+    I’m fluent in Arabic, English, and several Nigerian local languages, ensuring smooth communication with clients globally. 
+    I’m committed to clean code, modern design, and delivering projects that exceed expectations.</p>
+    </section>
+  </aside>
 
-  <script>
-    const form = document.getElementById('contactForm');
-    const successMsg = document.getElementById('successMessage');
-    form.addEventListener('submit', (e) => {
-      setTimeout(() => {
-        successMsg.style.display = 'block';
-        form.reset();
-      }, 500);
-    });
-  </script>
+</main>
+
+<footer>
+  &copy; 2025 Aliyu Abdullahi
+</footer>
+
+<script>
+  const form = document.querySelector('form');
+  const successMsg = document.getElementById('successMessage');
+
+  form.addEventListener('submit', (e) => {
+    setTimeout(() => {
+      successMsg.style.display = 'block';
+      form.reset();
+    }, 500);
+  });
+</script>
+
 </body>
 </html>
