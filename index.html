@@ -19,7 +19,7 @@
 
 <section class="hero">
   <h2>Front-End Web Developer</h2>
-  <p>Building fast, responsive websites and apps for Tungan-Maje community. Based in Nigeria.</p>
+  <p>Building fast, responsive websites and apps for clients worldwide. Based in Nigeria.</p>
 </section>
 
 <main>
@@ -29,63 +29,66 @@
     <h3>Projects — Tungan-Maje Demos</h3>
     <div class="projects-grid">
 
-      <!-- Demo 1 -->
+      <!-- Demo 1: Community Event -->
       <div class="project-card">
         <img src="project-images/tunga2.jpg" alt="Tungan-Maje Community Event" />
         <div class="project-content">
           <h4>Tungan-Maje Community Event</h4>
           <p>A registration system for community events, fully integrated with Formspree.</p>
           <div class="project-links">
-            <a href="#contact">Register</a>
+            <a href="#form-event1">Register</a>
             <a href="https://github.com/yourgithubusername/tunga-event" target="_blank">Source Code</a>
           </div>
         </div>
       </div>
 
-      <!-- Demo 2 -->
+      <!-- Demo 2: Local Market -->
       <div class="project-card">
         <img src="project-images/tunga1.jpg" alt="Tungan-Maje Local Market" />
         <div class="project-content">
           <h4>Tungan-Maje Local Market</h4>
-          <p>A landing page for the local market, showcasing products and vendor info.</p>
+          <p>Landing page for the local market with product showcase.</p>
           <div class="project-links">
+            <a href="#form-market">Request Info</a>
             <a href="https://github.com/yourgithubusername/tunga-market" target="_blank">Source Code</a>
           </div>
         </div>
       </div>
 
-      <!-- Demo 3 -->
+      <!-- Demo 3: Education Portal -->
       <div class="project-card">
         <img src="project-images/tungatech.jpg" alt="Tungan-Maje Education Portal" />
         <div class="project-content">
           <h4>Tungan-Maje Education Portal</h4>
-          <p>Demo portal for schools in Tungan-Maje, showing classes, schedules, and resources.</p>
+          <p>Demo portal for schools showing classes, schedules, and resources.</p>
           <div class="project-links">
+            <a href="#form-education">Request Access</a>
             <a href="https://github.com/yourgithubusername/tunga-education" target="_blank">Source Code</a>
           </div>
         </div>
       </div>
 
-      <!-- Demo 4 -->
+      <!-- Demo 4: Volunteer Signup -->
       <div class="project-card">
         <img src="project-images/tunga3.jpg" alt="Tungan-Maje Volunteer Signup" />
         <div class="project-content">
           <h4>Tungan-Maje Volunteer Signup</h4>
           <p>Sign-up system for community volunteers. Users can register to participate.</p>
           <div class="project-links">
-            <a href="#contact">Sign Up</a>
+            <a href="#form-volunteer">Sign Up</a>
             <a href="https://github.com/yourgithubusername/tunga-volunteer" target="_blank">Source Code</a>
           </div>
         </div>
       </div>
 
-      <!-- Demo 5 -->
+      <!-- Demo 5: Community Blog -->
       <div class="project-card">
         <img src="project-images/blog.jpg" alt="Tungan-Maje Community Blog" />
         <div class="project-content">
           <h4>Tungan-Maje Community Blog</h4>
-          <p>Blog platform for Tungan-Maje updates, announcements, and news articles.</p>
+          <p>Blog platform for updates, announcements, and community news.</p>
           <div class="project-links">
+            <a href="#form-blog">Subscribe</a>
             <a href="https://github.com/yourgithubusername/tunga-blog" target="_blank">Source Code</a>
           </div>
         </div>
@@ -97,40 +100,100 @@
   <!-- Skills Section -->
   <section id="skills">
     <h3>Skills</h3>
-    <p>HTML, CSS (Flexbox/Grid), responsive design, JavaScript, form integration with Formspree, clean UX/UI design.</p>
+    <p>HTML, CSS (Flexbox/Grid), responsive design, JavaScript, Formspree integration, clean UX/UI design.</p>
   </section>
 
-  <!-- Contact & Registration Form -->
+  <!-- Contact & Forms Section -->
   <aside>
-    <section class="form-section" id="contact">
-      <h3>Contact / Register for Events</h3>
+
+    <!-- Community Event Form -->
+    <section class="form-section" id="form-event1">
+      <h3>Register for Community Event</h3>
       <form action="https://formspree.io/f/xpwlnaya" method="POST">
-        <label for="full_name">Full Name</label>
-        <input type="text" id="full_name" name="name" placeholder="Your full name" required />
-
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="_replyto" placeholder="you@example.com" required />
-
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" placeholder="Your phone number" required />
-
-        <label for="comments">Additional Comments</label>
-        <textarea id="comments" name="message" placeholder="Optional comments"></textarea>
-
+        <label>Full Name</label>
+        <input type="text" name="name" placeholder="Your full name" required />
+        <label>Email</label>
+        <input type="email" name="_replyto" placeholder="you@example.com" required />
+        <label>Phone</label>
+        <input type="tel" name="phone" placeholder="Your phone number" required />
+        <textarea name="message" placeholder="Additional comments"></textarea>
         <button type="submit">Submit</button>
       </form>
-      <p class="success-message" id="successMessage" style="display:none;">✅ Submission received! We will contact you soon.</p>
+      <p class="success-message" style="display:none;">✅ Submission received! We will contact you soon.</p>
+    </section>
+
+    <!-- Local Market Form -->
+    <section class="form-section" id="form-market">
+      <h3>Request Info for Local Market</h3>
+      <form action="https://formspree.io/f/xpwlnaya" method="POST">
+        <label>Full Name</label>
+        <input type="text" name="name" placeholder="Your full name" required />
+        <label>Email</label>
+        <input type="email" name="_replyto" placeholder="you@example.com" required />
+        <label>Phone</label>
+        <input type="tel" name="phone" placeholder="Your phone number" required />
+        <textarea name="message" placeholder="Any questions or requests"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <p class="success-message" style="display:none;">✅ Submission received! We will contact you soon.</p>
+    </section>
+
+    <!-- Education Portal Form -->
+    <section class="form-section" id="form-education">
+      <h3>Request Access to Education Portal</h3>
+      <form action="https://formspree.io/f/xpwlnaya" method="POST">
+        <label>Full Name</label>
+        <input type="text" name="name" placeholder="Your full name" required />
+        <label>Email</label>
+        <input type="email" name="_replyto" placeholder="you@example.com" required />
+        <label>Phone</label>
+        <input type="tel" name="phone" placeholder="Your phone number" required />
+        <textarea name="message" placeholder="Any questions or requests"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <p class="success-message" style="display:none;">✅ Submission received! We will contact you soon.</p>
+    </section>
+
+    <!-- Volunteer Signup Form -->
+    <section class="form-section" id="form-volunteer">
+      <h3>Volunteer Signup</h3>
+      <form action="https://formspree.io/f/xpwlnaya" method="POST">
+        <label>Full Name</label>
+        <input type="text" name="name" placeholder="Your full name" required />
+        <label>Email</label>
+        <input type="email" name="_replyto" placeholder="you@example.com" required />
+        <label>Phone</label>
+        <input type="tel" name="phone" placeholder="Your phone number" required />
+        <textarea name="message" placeholder="Any questions or requests"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <p class="success-message" style="display:none;">✅ Submission received! We will contact you soon.</p>
+    </section>
+
+    <!-- Community Blog Form -->
+    <section class="form-section" id="form-blog">
+      <h3>Subscribe to Community Blog</h3>
+      <form action="https://formspree.io/f/xpwlnaya" method="POST">
+        <label>Full Name</label>
+        <input type="text" name="name" placeholder="Your full name" required />
+        <label>Email</label>
+        <input type="email" name="_replyto" placeholder="you@example.com" required />
+        <textarea name="message" placeholder="Any questions or feedback"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <p class="success-message" style="display:none;">✅ Submission received! We will contact you soon.</p>
     </section>
 
     <!-- About Me -->
     <section class="about-card">
       <h3>About Me</h3>
-      <p>Hi! I’m Aliyu Abdullahi, a passionate front-end web developer and Computer Science student at the University of Abuja, Nigeria. 
-    I specialize in building fast, responsive, and user-friendly websites for clients worldwide. 
-    I have experience creating landing pages, blogs, e-commerce sites, and community projects. 
-    I’m fluent in Arabic, English, and several Nigerian local languages, ensuring smooth communication with clients globally. 
-    I’m committed to clean code, modern design, and delivering projects that exceed expectations.</p>
+      <p>Hi! I’m Aliyu Abdullahi, a passionate front-end web developer and Computer Science student at the University of Abuja, Nigeria.   
+      I specialize in building fast, responsive, and user-friendly websites for clients worldwide.   
+      I have experience creating landing pages, blogs, e-commerce sites, and community projects.   
+      I’m fluent in Arabic, English, and several Nigerian local languages, ensuring smooth communication with clients globally.   
+      I’m committed to clean code, modern design, and delivering projects that exceed expectations.</p>
     </section>
+
   </aside>
 
 </main>
@@ -140,14 +203,15 @@
 </footer>
 
 <script>
-  const form = document.querySelector('form');
-  const successMsg = document.getElementById('successMessage');
-
-  form.addEventListener('submit', (e) => {
-    setTimeout(() => {
-      successMsg.style.display = 'block';
-      form.reset();
-    }, 500);
+  const forms = document.querySelectorAll('form');
+  forms.forEach(form => {
+    const successMsg = form.nextElementSibling;
+    form.addEventListener('submit', (e) => {
+      setTimeout(() => {
+        successMsg.style.display = 'block';
+        form.reset();
+      }, 500);
+    });
   });
 </script>
 
