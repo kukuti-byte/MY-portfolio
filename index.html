@@ -13,7 +13,7 @@
   <nav>
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
-    <a href="contact.html">Contact</a>
+    <a href="#contact-form">Contact</a>
   </nav>
 </header>
 
@@ -29,66 +29,66 @@
     <h3>Projects — Tungan-Maje Demos</h3>
     <div class="projects-grid">
 
-      <!-- Demo 1: Community Event -->
+      <!-- Project 1: Community Event -->
       <div class="project-card">
         <img src="project-images/tunga2.jpg" alt="Tungan-Maje Community Event" />
         <div class="project-content">
           <h4>Tungan-Maje Community Event</h4>
           <p>A registration system for community events, fully integrated with Formspree.</p>
           <div class="project-links">
-            <a href="#form-event1">Register</a>
+            <a href="#contact-form">Register</a>
             <a href="https://github.com/kukuti-byte/MY-portfolio.git" target="_blank">Source Code</a>
           </div>
         </div>
       </div>
 
-      <!-- Demo 2: Local Market -->
+      <!-- Project 2: Local Market -->
       <div class="project-card">
         <img src="project-images/tunga1.jpg" alt="Tungan-Maje Local Market" />
         <div class="project-content">
           <h4>Tungan-Maje Local Market</h4>
           <p>Landing page for the local market with product showcase.</p>
           <div class="project-links">
-            <a href="#form-market">Request Info</a>
+            <a href="#contact-form">Request Info</a>
             <a href="https://github.com/kukuti-byte/MY-portfolio.git" target="_blank">Source Code</a>
           </div>
         </div>
       </div>
 
-      <!-- Demo 3: Education Portal -->
+      <!-- Project 3: Education Portal -->
       <div class="project-card">
         <img src="project-images/tungatech.jpg" alt="Tungan-Maje Education Portal" />
         <div class="project-content">
           <h4>Tungan-Maje Education Portal</h4>
           <p>Demo portal for schools showing classes, schedules, and resources.</p>
           <div class="project-links">
-            <a href="#form-education">Request Access</a>
+            <a href="#contact-form">Request Access</a>
             <a href="https://github.com/kukuti-byte/MY-portfolio.git" target="_blank">Source Code</a>
           </div>
         </div>
       </div>
 
-      <!-- Demo 4: Volunteer Signup -->
+      <!-- Project 4: Volunteer Signup -->
       <div class="project-card">
         <img src="project-images/tunga3.jpg" alt="Tungan-Maje Volunteer Signup" />
         <div class="project-content">
           <h4>Tungan-Maje Volunteer Signup</h4>
           <p>Sign-up system for community volunteers. Users can register to participate.</p>
           <div class="project-links">
-            <a href="#form-volunteer">Sign Up</a>
+            <a href="#contact-form">Sign Up</a>
             <a href="https://github.com/kukuti-byte/MY-portfolio.git" target="_blank">Source Code</a>
           </div>
         </div>
       </div>
 
-      <!-- Demo 5: Community Blog -->
+      <!-- Project 5: Community Blog -->
       <div class="project-card">
         <img src="project-images/blog.jpg" alt="Tungan-Maje Community Blog" />
         <div class="project-content">
           <h4>Tungan-Maje Community Blog</h4>
           <p>Blog platform for updates, announcements, and community news.</p>
           <div class="project-links">
-            <a href="#form-blog">Subscribe</a>
+            <a href="#contact-form">Subscribe</a>
             <a href="https://github.com/kukuti-byte/MY-portfolio.git" target="_blank">Source Code</a>
           </div>
         </div>
@@ -103,7 +103,23 @@
     <p>HTML, CSS (Flexbox/Grid), responsive design, JavaScript, Formspree integration, clean UX/UI design.</p>
   </section>
 
-  <!-- About Me Section -->
+  <!-- Unified Contact / Registration Form -->
+  <section class="form-section" id="contact-form">
+    <h3>Contact / Registration</h3>
+    <form action="https://formspree.io/f/xpwlnaya" method="POST">
+      <label>Full Name</label>
+      <input type="text" name="name" placeholder="Your full name" required />
+      <label>Email</label>
+      <input type="email" name="_replyto" placeholder="you@example.com" required />
+      <label>Phone</label>
+      <input type="tel" name="phone" placeholder="Your phone number" required />
+      <textarea name="message" placeholder="Your message, feedback, or request"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <p class="success-message" style="display:none;">✅ Submission received! We will contact you soon.</p>
+  </section>
+
+  <!-- About Me -->
   <section class="about-card">
     <h3>About Me</h3>
     <p>Hi! I’m Aliyu Abdullahi, a passionate front-end web developer and Computer Science student at the University of Abuja, Nigeria.   
@@ -118,6 +134,18 @@
 <footer>
   &copy; 2025 Aliyu Abdullahi
 </footer>
+
+<script>
+  const form = document.querySelector('#contact-form form');
+  const successMsg = document.querySelector('#contact-form .success-message');
+
+  form.addEventListener('submit', (e) => {
+    setTimeout(() => {
+      successMsg.style.display = 'block';
+      form.reset();
+    }, 500);
+  });
+</script>
 
 </body>
 </html>
